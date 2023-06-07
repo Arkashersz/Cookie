@@ -225,6 +225,141 @@ section {
     border-radius: 0 0.5rem 0 0.5rem;
 }
 
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+}
+.slide-container{
+    max-width: 1120px;
+    width: 100%;
+    padding: 40px 0;
+}
+.slide-content{
+    margin: 0 45px;
+    overflow: hidden;
+    border-radius: 25px;
+    filter: drop-shadow(10px 10px 10px rgb(0, 0, 0, 0.389));
+}
+.card{
+    border-radius: 25px;
+    background-color: #feeee7;  
+}
+.image-content, .card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.image-content{
+    position: relative;
+    row-gap: 5px;
+    padding: 25px 0;
+}
+.overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: ;
+    border-radius: 25px 25px 25px 25px;
+}
+.overlay::before,.overlay::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+    height: 40px;
+    width: 40px;
+    
+}
+.overlay::after{
+    border-radius: 0 25px 0 0;
+    background-color: #feeee7;
+}
+.card-image{
+    position: relative;
+    height: 220px;
+    width: 220px;   
+    padding: 3px;
+}
+.card-image .card-img{    
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 2px solid var(--main-color);
+    
+}
+.name{
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+}
+.description{
+    font-size: 14px;
+    color: var(--bg-color);
+    text-align: center;
+    position: relative
+}
+.description::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 38px;
+}
+.button{
+    border: none;
+    font-size: 16px;
+    color: #FFF;
+    padding: 8px 16px;
+    background-color: var(--bg-color);
+    border-radius: 6px;
+    margin: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.button:hover{
+    background: var(--main-color);
+}
+
+.swiper-navBtn{
+    color: #ff702a;
+    transition: color 0.3s ease;
+}
+.swiper-navBtn:hover{
+    color: #818181;
+}
+.swiper-navBtn::before,
+.swiper-navBtn::after{
+    font-size: 35px;
+}
+.swiper-button-next{
+    right: 0;
+}
+.swiper-button-prev{
+    left: 0;
+}
+.swiper-pagination-bullet{
+    background-color: #000;
+    opacity: 1;    
+}
+.swiper-pagination-bullet-active{
+    background-color: #000;
+}
+
+
+
+
+
+
+
 .serviço-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, auto));
