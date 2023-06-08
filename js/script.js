@@ -9,6 +9,24 @@ window.onscroll = () => {
     navbar.classList.remove("active");
 };
 
+/* ======== Animação digitação ======= */
+function escrevendoletra(){
+    function ativar(elemento){
+        const arraytexto = elemento.innerHTML.split('');
+        elemento.innerHTML = '';
+        arraytexto.forEach((letra, i)=>{
+            setTimeout(()=>{
+                elemento.innerHTML += letra; 
+            }, 80 * i);
+        });
+    }
+
+    const titulo = document.querySelector('.typing');
+    ativar(titulo);    
+}
+escrevendoletra()
+
+
 var swiper = new Swiper(".slide-content", {
     slidesPerView: 5,
     spaceBetween: 25,
@@ -30,7 +48,7 @@ var swiper = new Swiper(".slide-content", {
         0: {
             slidesPerView: 1,
         },
-        520: {
+        720: {
             slidesPerView: 2,
         },
         950: {
